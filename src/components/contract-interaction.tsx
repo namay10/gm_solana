@@ -1,6 +1,6 @@
 // utils/raffle.ts
 import { Connection, PublicKey, SystemProgram } from '@solana/web3.js'
-import { BN, Program } from '@project-serum/anchor'
+import { BN } from '@coral-xyz/anchor'
 import { getAssociatedTokenAddress, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID } from '@solana/spl-token'
 import { getProgram } from '../utils/solana'
 import type { AnchorWallet } from '@solana/wallet-adapter-react'
