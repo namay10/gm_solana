@@ -2,7 +2,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { useWallet, useConnection, AnchorWallet } from '@solana/wallet-adapter-react'
 import { PublicKey } from '@solana/web3.js'
-import { BN } from '@project-serum/anchor'
 import { getAssociatedTokenAddress } from '@solana/spl-token'
 import {
   fetchGmState,
@@ -16,6 +15,7 @@ import {
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import '@/app/globals.css'
 import toast from 'react-hot-toast'
+import { BN } from '@coral-xyz/anchor'
 
 const ENTRY_PRICE_USDC = 250_000 // 0.25 USDC (6 decimals)
 const USDC_MINT = process.env.NEXT_PUBLIC_USDC_MINT
